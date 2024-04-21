@@ -1,0 +1,132 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(0,212,255,1) 100%);
+        box-sizing: border-box;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 140px;
+
+
+    }
+    .singer{
+        display: flex;
+        justify-content:flex-start
+        
+    }
+
+    .main h2 {
+        padding: 15px;
+
+    }
+
+    .main h3 {
+       margin-left: 15px;
+       margin-top: 10px;
+
+    }
+
+    h5 {
+        margin: 20px;
+    }
+
+    .card {
+        height: 500px;
+        width: 300px;
+        background-image: url(backgroundimage2.avif);
+        object-fit: cover;
+        background-position: left;
+        color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 2px 3px 50px 3px black;
+    }
+
+    #circle-img {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 40px;
+        margin-left: 50px;
+        box-shadow: 1px 1px 20px 1px white;
+    }
+
+    .controls {
+        width: 15rem;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-left: 28px;
+    }
+
+    #MyprogressBar {
+        width: 90%;
+        height: 0.1rem;
+        margin-top: 15px;
+        margin-left: 19px;
+        color: #fff;
+    }
+
+    .musicbeat {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        width: 280px;
+    }
+
+    #play,
+    #forward,
+    #backward,
+    #MyprogressBar {
+        cursor: pointer;
+
+    }
+
+    .anime {
+        animation: rotateplayer 3s linear infinite;
+    }
+
+    @keyframes rotateplayer {
+        from {
+            transform: rotate(0deg);
+
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .musicbeat img {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .logo{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo img{
+        width: 2rem;
+        padding: 10px;
+        margin-left: 6px;
+        margin-top: 6px; 
+    }
+    .logo img:hover{
+        transform: scale(1.2);
+        transition: 0.3s all ease-in;
+    }
+

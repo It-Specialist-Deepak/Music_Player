@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="musicmood.jpeg">
+    <title>Music Mood</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="logo">
+                <img src="musicmood.jpeg" alt="">
+                <h2>Music Mood</h2>
+            </div>
+            
+            <div class="singer">
+                <h3>Artist -</h3>
+            <h3 id="artist">Coolio</h3>
+            </div>
+            <div class="img">
+                <img id="circle-img" src="imagesmusicapp/song1.jpg" alt="">
+            </div>
+            <audio src="music/song1.mp3"></audio>
+            <div class="musicbeat">
+                <h5 id="title">Gangsta Paradise</h5>
+                <img src="music-visualizer.gif" alt="">
+            </div>
+
+            <!-- controls -->
+            <input type="range" name="Range" id="MyprogressBar" value="0" min="0" max="100">
+            <div class="controls">
+                <i id="backward" class="fa-solid fa-backward"></i>
+                <i id="play" class="fa-solid fa-play"></i>
+                <i id="forward" class="fa-solid fa-forward"></i>
+
+            </div>
+        </div>
+    </div>
+   <script src="music.js"></script>
+</body>
+
+</html>
